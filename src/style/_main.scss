@@ -33,17 +33,11 @@
             align-self: flex-start;
             margin: 1em 0;
         }
-
-        .form-login-button{
-            @include btn-variant($primary-color,$body-bg,100%);            
-        }
         
         .form-or{
             padding: 1em;
         }
 
-        .form-register-button{
-            @include btn-variant($white,$primary-color,100%);
-        }
+        @extend .from-button-style
     }
 }

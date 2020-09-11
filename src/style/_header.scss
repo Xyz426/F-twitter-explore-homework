@@ -9,11 +9,6 @@
     .header-logo{
         @include heading(30px)
     }
-    .login-button{
-        @include btn-variant($primary-color,$body-bg,60px);
-    }
-
-    .register-button{
-        @include btn-variant($white,$primary-color,60px);
-    }
+    
+    @extend .header-button-style;
 }

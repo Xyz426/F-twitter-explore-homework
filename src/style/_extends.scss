@@ -1,0 +1,18 @@
+.from-button-style{
+    .form-login-button{
+        @include btn-variant($primary-color,$body-bg,100%);
+    }
+    .form-register-button{
+        @include btn-variant($white,$primary-color,100%);
+    }
+}
+
+.header-button-style{
+    .login-button{
+        @include btn-variant($primary-color,$body-bg,60px);
+    }
+
+    .register-button{
+        @include btn-variant($white,$primary-color,60px);
+    }
+}
