@@ -3,13 +3,17 @@
     justify-content: space-between;
     align-items: center;
     padding: $container-padding-y $container-padding-x;
-    border: 1px solid $gray;
-    
+    border-bottom: 1px solid $border-color;
+    height: 10%;
+
+    .header-logo{
+        @include heading(30px)
+    }
     .login-button{
-        @include btn-variant($primary-color,$body-bg,60px,30px)
+        @include btn-variant($primary-color,$body-bg,60px);
     }
 
     .register-button{
-        @include btn-variant($white,$primary-color,60px,30px)
+        @include btn-variant($white,$primary-color,60px);
     }
 }

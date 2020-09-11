@@ -1,31 +1,34 @@
 <!doctype html>
 <html lang="zh-Hans">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Title</title>
 </head>
+
 <body>
   <header class="header">
-    <h1>Twitter</h1>
+    <span class="header-logo">Twitter</span>
     <nav>
       <button class="login-button">登录</button>
       <button class="register-button">注册</button>
     </nav>
   </header>
-  <main>
-   <div class="container">      
-    <span>查看世界上正在发生的事情</span>
-    <input type="text" placeholder="电话、邮件地址或用户名">
-    <input type="text" placeholder="密码">
-    <a href="#">忘记密码</a>
-    <button>登录</button>
-    <span>或</span>
-    <button>注册</button>
-    </div>
+  <main class="main">
+    <form action="#" class="form-login">
+      <span class="form-login-title">查看世界上正在发生的事情</span>
+      <input class="form-input" type="text" placeholder="电话、邮箱地址或用户名">
+      <input class="form-input" type="text" placeholder="密码">
+      <a href="#" class="form-link">忘记密码?</a>
+      <button class="form-login-button">登录</button>
+      <span class="form-or">或</span>
+      <button class="form-register-button">注册</button>
+    </form>
   </main>
   <script src="src/app.js"></script>
 </body>
+
 </html>
