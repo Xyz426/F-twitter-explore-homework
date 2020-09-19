@@ -1,18 +1,19 @@
-.from-button-style{
-    .form-login-button{
-        @include btn-variant($primary-color,$body-bg,100%);
-    }
-    .form-register-button{
-        @include btn-variant($white,$primary-color,100%);
-    }
+.from-button-style {
+  //TODO feedback: 应该在.form-login-button里面去调用extend的class, 而不是在extend的class里面去调用.form-login-button
+  .form-login-button {
+    @include btn-variant($primary-color, $body-bg, 100%);
+  }
+  .form-register-button {
+    @include btn-variant($white, $primary-color, 100%);
+  }
 }
+//TODO feedback: 应该在.form-login-button里面去调用extend的class, 而不是在extend的class里面去调用.form-login-button
+.header-button-style {
+  .login-button {
+    @include btn-variant($primary-color, $body-bg, 60px);
+  }
 
-.header-button-style{
-    .login-button{
-        @include btn-variant($primary-color,$body-bg,60px);
-    }
-
-    .register-button{
-        @include btn-variant($white,$primary-color,60px);
-    }
+  .register-button {
+    @include btn-variant($white, $primary-color, 60px);
+  }
 }

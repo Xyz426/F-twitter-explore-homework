@@ -1,14 +1,14 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $container-padding-y $container-padding-x;
-    border-bottom: 1px solid $border-color;
-    height: 10%;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+  border-bottom: 1px solid $border-color;
+  height: 10%;
 
-    .header-logo{
-        @include heading(30px)
-    }
-    
-    @extend .header-button-style;
+  .header-logo {
+    @include heading(30px);
+  }
+  //TODO feedback: 应该使用@include而不是@extend, 要去了解一下二者的区别
+  @extend .header-button-style;
 }
